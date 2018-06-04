@@ -1,0 +1,42 @@
+﻿<styles:CachedResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                                    xmlns:ui="clr-namespace:RGBSyncPlus.UI"
+                                    xmlns:styles="clr-namespace:RGBSyncPlus.Styles"
+                                    xmlns:controls="clr-namespace:RGBSyncPlus.Controls"
+                                    xmlns:converter="clr-namespace:RGBSyncPlus.Converter">
+
+    <styles:CachedResourceDictionary.MergedDictionaries>
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/BlurredDecorationWindow.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/ImageButton.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/Form.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/GroupBox.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/ToolTip.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/ComboBox.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/Button.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/ListBox.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/Slider.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/TextBox.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/ColorSelector.xaml" />
+        <styles:CachedResourceDictionary Source="/RGBSync+;component/Styles/GradientEditor.xaml" />
+    </styles:CachedResourceDictionary.MergedDictionaries>
+
+    <converter:EqualsToBoolConverter x:Key="EqualsToBoolConverter" />
+    <converter:BoolToVisibilityConverter x:Key="BoolToVisibilityConverter" />
+    <converter:NullToVisibilityConverter x:Key="NullToVisibilityConverter" />
+
+    <Style TargetType="{x:Type controls:BlurredDecorationWindow}" BasedOn="{StaticResource StyleBlurredDecorationWindow}" />
+    <Style TargetType="{x:Type ui:ConfigurationWindow}" BasedOn="{StaticResource StyleBlurredDecorationWindow}" />
+    <Style TargetType="{x:Type controls:ImageButton}" BasedOn="{StaticResource StyleImageButton}" />
+    <Style TargetType="{x:Type controls:Form}" BasedOn="{StaticResource StyleForm}" />
+    <Style TargetType="GroupBox" BasedOn="{StaticResource StyleGroupBoxBox}" />
+    <Style TargetType="ToolTip" BasedOn="{StaticResource StyleToolTip}" />
+    <Style TargetType="ComboBox" BasedOn="{StaticResource StyleComboBox}" />
+    <Style TargetType="Button" BasedOn="{StaticResource StyleButton}" />
+    <Style TargetType="ListBox" BasedOn="{StaticResource StyleListBox}" />
+    <Style TargetType="Slider" BasedOn="{StaticResource StyleSlider}" />
+    <Style TargetType="TextBox" BasedOn="{StaticResource StyleTextBox}" />
+
+</styles:CachedResourceDictionary>
+
+
+
