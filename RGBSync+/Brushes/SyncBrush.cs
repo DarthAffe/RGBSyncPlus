@@ -37,6 +37,9 @@ namespace RGBSyncPlus.Brushes
 
         protected override Color GetColorAtPoint(Rectangle rectangle, BrushRenderTarget renderTarget)
         {
+            if(_syncLed == null)
+                _syncLed = _syncGroup.SyncLed?.GetLed();
+
             if (renderTarget.Led == _syncLed)
                 return Color.Transparent;
 
