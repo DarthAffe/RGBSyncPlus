@@ -7,7 +7,7 @@ namespace RGBSyncPlus.Helper
 {
     public static class RGBNetExtension
     {
-        public static string GetDeviceName(this IRGBDevice device) => $"{device.DeviceInfo.Manufacturer} {device.DeviceInfo.Model} ({device.DeviceInfo.DeviceType})";
+        public static string GetDeviceName(this IRGBDevice device) => $"{device.DeviceInfo.DeviceName} ({device.DeviceInfo.DeviceType})";
 
         public static IEnumerable<Led> GetLeds(this IEnumerable<SyncLed> syncLeds)
             => syncLeds.Select(GetLed).Where(led => led != null);
