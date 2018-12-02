@@ -55,6 +55,12 @@ namespace RGBSyncPlus
 
                 ApplicationManager.Instance.Settings = settings;
                 ApplicationManager.Instance.Initialize();
+
+                if (!settings.MinimizeToTray) //HACK DarthAffe 02.12.2018: Workaround to create the window
+                {
+                    ApplicationManager.Instance.OpenConfigurationCommand.Execute(null);
+                    ApplicationManager.Instance.HideConfigurationCommand.Execute(null);
+                }
             }
             catch (Exception ex)
             {

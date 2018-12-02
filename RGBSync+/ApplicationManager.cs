@@ -39,6 +39,9 @@ namespace RGBSyncPlus
         private ActionCommand _openConfiguration;
         public ActionCommand OpenConfigurationCommand => _openConfiguration ?? (_openConfiguration = new ActionCommand(OpenConfiguration));
 
+        private ActionCommand _hideConfiguration;
+        public ActionCommand HideConfigurationCommand => _hideConfiguration ?? (_hideConfiguration = new ActionCommand(HideConfiguration));
+
         private ActionCommand _exitCommand;
         public ActionCommand ExitCommand => _exitCommand ?? (_exitCommand = new ActionCommand(Exit));
 
@@ -133,10 +136,26 @@ namespace RGBSyncPlus
             }
         }
 
+        private void HideConfiguration()
+        {
+            if (Settings.MinimizeToTray)
+            {
+                if (_configurationWindow.IsVisible)
+                    _configurationWindow.Hide();
+            }
+            else
+                _configurationWindow.WindowState = WindowState.Minimized;
+        }
+
         private void OpenConfiguration()
         {
             if (_configurationWindow == null) _configurationWindow = new ConfigurationWindow();
-            _configurationWindow.Show();
+
+            if (!_configurationWindow.IsVisible)
+                _configurationWindow.Show();
+
+            if (_configurationWindow.WindowState == WindowState.Minimized)
+                _configurationWindow.WindowState = WindowState.Normal;
         }
 
         private void Exit()

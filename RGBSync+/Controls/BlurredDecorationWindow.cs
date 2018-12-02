@@ -76,7 +76,7 @@ namespace RGBSyncPlus.Controls
                 closeButton.Click += (sender, args) => ApplicationManager.Instance.ExitCommand.Execute(null);
 
             if (GetTemplateChild("PART_MinimizeButton") is Button minimizeButton)
-                minimizeButton.Click += (sender, args) => Hide();
+                minimizeButton.Click += (sender, args) => ApplicationManager.Instance.HideConfigurationCommand.Execute(null); //HACK DarthAffe 02.12.2018: This is a really dirty hack - hopefully this will never get more than one window ...
 
             if (GetTemplateChild("PART_IconButton") is Button iconButton)
                 iconButton.Click += (sender, args) => IconCommand?.Execute(null);
