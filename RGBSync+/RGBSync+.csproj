@@ -199,19 +199,19 @@
       <Version>1.0.8</Version>
     </PackageReference>
     <PackageReference Include="Newtonsoft.Json">
-      <Version>11.0.2</Version>
+      <Version>12.0.1</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Brushes">
-      <Version>0.0.1.70</Version>
+      <Version>0.1.14</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Core">
-      <Version>0.0.1.70</Version>
+      <Version>0.1.14</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Decorators">
-      <Version>0.0.1.70</Version>
+      <Version>0.1.14</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Groups">
-      <Version>0.0.1.70</Version>
+      <Version>0.1.14</Version>
     </PackageReference>
     <PackageReference Include="System.ValueTuple">
       <Version>4.5.0</Version>
