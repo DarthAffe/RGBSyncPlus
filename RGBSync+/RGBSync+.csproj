@@ -202,16 +202,16 @@
       <Version>12.0.1</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Brushes">
-      <Version>0.1.14</Version>
+      <Version>0.1.15</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Core">
-      <Version>0.1.14</Version>
+      <Version>0.1.15</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Decorators">
-      <Version>0.1.14</Version>
+      <Version>0.1.15</Version>
     </PackageReference>
     <PackageReference Include="RGB.NET.Groups">
-      <Version>0.1.14</Version>
+      <Version>0.1.15</Version>
     </PackageReference>
     <PackageReference Include="System.ValueTuple">
       <Version>4.5.0</Version>
