@@ -1,3 +1,7 @@
+Since [RGB.NET](https://github.com/DarthAffe/RGB.NET) no longer supports reading colors from devices, syncing is no longer possible and this example no longer needed.
+
+If you're looking for a software to control RGB-devices of different brands together consider checking out [Artemis](https://github.com/Artemis-RGB/Artemis).
+
 # RGBSyncPlus
 Tool to syncronize RGB devices
 
